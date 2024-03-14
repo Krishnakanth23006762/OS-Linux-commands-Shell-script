@@ -52,13 +52,16 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+![Screenshot 2024-02-23 152910](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/5de11d7a-ab29-4dd2-ad8a-ce5b5cf75a5d)
+
 comm file1 file2
  ## OUTPUT
+ ![Screenshot 2024-02-23 153007](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/104921db-a892-492d-8823-aab2952ca8e0)
 
- 
+
 diff file1 file2
 ## OUTPUT
+![Screenshot 2024-02-23 153040](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/e00b98aa-0c20-4d2f-8ff6-102817fb43b9)
 
 
 #Filters
@@ -84,15 +87,18 @@ cut -c1-3 file11
 ## OUTPUT
 
 
+![Screenshot 2024-02-23 153214](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/721f3917-26fa-4375-8eb5-fb0d65fbec5d)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![Screenshot 2024-02-23 153230](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/71ead726-77ac-478f-a4aa-41340417e957)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![Screenshot 2024-02-23 153240](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/f551db73-a173-4794-a395-2ebbd306c3ae)
 
 
 cat < newfile 
@@ -108,29 +114,34 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 153257](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/4cb0e6a8-789e-4e5d-9d61-517465ac3c82)
 
 
 grep hello newfile 
 ## OUTPUT
 
 
+![Screenshot 2024-02-23 153309](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/3ddfe839-ffb4-4ca4-9160-af1b7d094dcf)
 
 
 grep -v hello newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 153324](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/25354369-7d5d-4b15-ae3c-f5c8bb00268d)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
 
+![Screenshot 2024-02-23 153345](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/69fbb459-0337-4144-8f4a-73a7337cee7e)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
 
+ ![Screenshot 2024-02-23 153357](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/be0be825-434c-4a21-9029-90ccee221df5)
 
 
 grep -R ubuntu /etc
@@ -140,6 +151,7 @@ grep -R ubuntu /etc
 
 grep -w -n world newfile   
 ## OUTPUT
+![Screenshot 2024-02-23 155740](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/03950f1b-06a9-435a-83f0-c7ec5ba6ed74)
 
 
 cat < newfile 
@@ -164,31 +176,37 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 160222](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/4c8bac72-6168-43d3-9f20-55839678e89a)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 160232](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/5015dd76-7847-4c22-aee8-caac4b741bba)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 160240](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/d6078f49-08b1-4da4-8ddb-22dabbf7265e)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 160454](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/9f515c75-94a9-489a-ae34-8397cb07d7d4)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+![Screenshot 2024-02-23 160525](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/643eaae9-cc4e-4b87-8332-fb5555bfe85e)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![Screenshot 2024-02-23 160555](https://github.com/DheenaDarshini/OS-Linux-commands-Shell-script/assets/139415929/7dc6a297-5fc4-435f-bb71-fe6ea2843d36)
 
 
 egrep '((W|w)orld$)' newfile 
